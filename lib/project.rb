@@ -6,7 +6,11 @@ class Project
     @name = name 
     @backers = []
   end
-  def sels.all 
+  def self.all 
     @@all 
+  end
+  def add_backer(new_backer)
+    @backers << new_backer
+    new_backer.
   end
 end
