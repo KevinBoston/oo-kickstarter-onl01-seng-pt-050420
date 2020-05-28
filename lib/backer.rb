@@ -8,7 +8,7 @@ class Backer
   end
   def back_project(new_project)
     @backed_projects << new_project
-    new_project.backers !include(self) ? new_project.add_backer(self) : new_project.backers
+    new_project.backers.!include(self) ? new_project.add_backer(self) : new_project.backers
   end
   def self.all 
     @@all 
